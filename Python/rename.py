@@ -9,7 +9,7 @@ script_filename = os.path.basename(__file__)
 for index, filename in enumerate(image_files, start=1):
     name, extension = os.path.splitext(filename)
     
-    # Skip renaming the script file itself and other Python files
+    # Skip renaming the script file itself and other Python files nm = noelle morales
     if filename != script_filename and extension.lower() not in ['.py', '.pyc', '.pyo']:
         new_filename = f"rosie_{index:02d}{extension}"
 
